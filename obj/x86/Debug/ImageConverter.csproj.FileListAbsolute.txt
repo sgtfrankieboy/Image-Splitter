@@ -7,3 +7,12 @@ D:\Development\Application\C#\MC World Editor\ImageConverter\obj\x86\Debug\Gener
 D:\Development\Application\C#\MC World Editor\ImageConverter\obj\x86\Debug\GenerateResource.write.1.tlog
 D:\Development\Application\C#\MC World Editor\ImageConverter\obj\x86\Debug\ImageConverter.exe
 D:\Development\Application\C#\MC World Editor\ImageConverter\obj\x86\Debug\ImageConverter.pdb
+D:\Development\Application\C#\MC World Editor\Image Splitter\obj\x86\Debug\ImageConverter.exe
+D:\Development\Application\C#\MC World Editor\Image Splitter\obj\x86\Debug\ImageConverter.pdb
+D:\Development\Application\C#\MC World Editor\Image Splitter\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Development\Application\C#\MC World Editor\Image Splitter\obj\x86\Debug\ImageConverter.FrmMain.resources
+D:\Development\Application\C#\MC World Editor\Image Splitter\obj\x86\Debug\ImageConverter.Properties.Resources.resources
+D:\Development\Application\C#\MC World Editor\Image Splitter\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Development\Application\C#\MC World Editor\Image Splitter\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Development\Application\C#\MC World Editor\Image Splitter\bin\Debug\ImageConverter.exe
+D:\Development\Application\C#\MC World Editor\Image Splitter\bin\Debug\ImageConverter.pdb

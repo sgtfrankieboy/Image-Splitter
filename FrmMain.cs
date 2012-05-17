@@ -26,14 +26,14 @@ namespace ImageConverter
         public FrmMain()
         {
             InitializeComponent();
-            comboExtension.SelectedIndex = 0;
+            comboExtension.SelectedIndex = 6;
         }
 
         private void btnLoad_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Title = "Image Splitter - Load Source Image";
-            ofd.Filter = "All Images|*.png;*.jpg;*.bmp";
+            ofd.Filter = "All Images|*.bmp;*.gif;*.jpeg;*.jpg;*.png;*.tiff|Bitmap|*.bmp|Graphical Interchange Format|*.gif|JPEG|*.jpeg;*.jpg|Portable Network Graphic|*.png|Tagged Image File Format|*.tiff";
             if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 try
@@ -119,7 +119,7 @@ namespace ImageConverter
                     {
                         g.DrawImage(source, 0, 0, rect, GraphicsUnit.Pixel);
                     }
-                    curImage.Save(txtSave.Text + txtFilename.Text.Replace("{num}", current.ToString()) + "." + extension, (extension == "png" ? ImageFormat.Png : extension == "jpg" ? ImageFormat.Jpeg : ImageFormat.Bmp));
+                    curImage.Save(txtSave.Text + txtFilename.Text.Replace("{num}", current.ToString()) + "." + extension, stringToFormat(extension));
                     current++;
                     this.Invoke((MethodInvoker)delegate
                     {
@@ -145,6 +145,33 @@ namespace ImageConverter
         {
             e.Cancel = true;
             MessageBox.Show("Image Splitter © 2012 Visual Bounds\n\nThis tool will allow you to split a single image into\n multiple smaller images of a predefined size.\n\nThis tool is free to use and open sourced.", "Image Spliter - About");
+        }
+
+        public ImageFormat stringToFormat(string str)
+        {
+            switch (str)
+            {
+                case "bmp":
+                    return ImageFormat.Bmp;
+                case "emf":
+                    return ImageFormat.Emf;
+                case "exif":
+                    return ImageFormat.Exif;
+                case "gif":
+                    return ImageFormat.Gif;
+                case "icon":
+                    return ImageFormat.Icon;
+                case "jpeg":
+                    return ImageFormat.Jpeg;
+                case "png":
+                    return ImageFormat.Png;
+                case "tiff":
+                    return ImageFormat.Tiff;
+                case "wmf":
+                    return ImageFormat.Wmf;
+                default:
+                    return ImageFormat.Png;
+            }
         }
 
     }

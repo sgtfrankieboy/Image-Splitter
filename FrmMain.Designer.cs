@@ -157,9 +157,15 @@
             this.comboExtension.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboExtension.FormattingEnabled = true;
             this.comboExtension.Items.AddRange(new object[] {
+            "bmp",
+            "emf",
+            "exif",
+            "gif",
+            "icon",
+            "jpeg",
             "png",
-            "jpg",
-            "bmp"});
+            "tiff",
+            "wmf"});
             this.comboExtension.Location = new System.Drawing.Point(188, 64);
             this.comboExtension.Name = "comboExtension";
             this.comboExtension.Size = new System.Drawing.Size(43, 21);
